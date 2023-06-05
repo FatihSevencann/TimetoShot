@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07efad26d839a4d218db1c0db8ec99a4, type: 3}
+  m_Name: 3
+  m_EditorClassIdentifier: 
+  _levelCount: 3
+  bulletCount: 6
+  enemyCount: 3
+  hostageCount: 3
+  playerPosition: {x: -1.6, y: 10.3, z: 24.6}
+  playerRotation: {x: 0, y: 0.004363309, z: 0, w: 0.99999046}
+  playerScale: {x: 1, y: 1, z: 1}
+  Map: {fileID: 1299901553705075186, guid: 9cc4c08ba838b4c3eb36c601e242159d, type: 3}
+  enemySpawnPoints:
+  - {x: -3.07, y: 0, z: -11.01}
+  - {x: 7.16, y: 0, z: -12.09}
+  - {x: 4.11, y: 0, z: -11.95}
+  hostageSpawnPoints:
+  - {x: 0, y: 0, z: -11}
+  - {x: 2.1, y: 0, z: -10.17}
+  - {x: 1.42, y: 0, z: -8.08}
+  enemies:
+  - prefab: {fileID: 7817889886859204371, guid: 032aca803c1574558a1ccc1b7eaa7cc0, type: 3}
+    spawnPoint: {x: -3.07, y: -0.33, z: -11.01}
+  - prefab: {fileID: 8516849319729362783, guid: 8a651debf1b6745ea8bd2da210e437f8, type: 3}
+    spawnPoint: {x: 7.16, y: -0.33, z: -12.09}
+  - prefab: {fileID: 6880508057485773212, guid: ed0e18083fcfb4ecf81a18c6815df487, type: 3}
+    spawnPoint: {x: 4.11, y: -0.33, z: -11.95}
+  hostages:
+  - prefab: {fileID: 671141229266353541, guid: 4a2102d8619e04f0c992626bba83ae20, type: 3}
+    spawnPoint: {x: 0, y: -0.33, z: -11}
+  - prefab: {fileID: 2549682248129784216, guid: edc1ae9634597415496590122a369feb, type: 3}
+    spawnPoint: {x: 2.1, y: -0.33, z: -10.17}
+  - prefab: {fileID: 7700015562129895501, guid: 1f1cf9239638e44d7a0060423b1d48ca, type: 3}
+    spawnPoint: {x: 1.42, y: -0.33, z: -8.08}
+  distance: 0.5
