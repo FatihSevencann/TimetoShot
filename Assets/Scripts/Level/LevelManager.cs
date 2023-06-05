@@ -22,7 +22,7 @@ public class LevelManager : Instancable<LevelManager>
 
     private void Awake()
     {
-        CurrentLevel = 3;
+        CurrentLevel = 0;
         
         _targetCount = LevelDatas[Instance.CurrentLevel].enemyCount;
         bulletCount = LevelDatas[Instance.CurrentLevel].bulletCount;
