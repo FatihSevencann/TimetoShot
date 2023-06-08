@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using NavMeshBuilder = UnityEngine.AI.NavMeshBuilder;
@@ -13,10 +15,10 @@ public class GameManager : Instancable<GameManager>
     public GameObject nextLevelCanvas;
     public GameObject buttonPanel;
     public GameObject reloadPanel;
-
+    
     public NavMeshData m_NavMeshData;
     private NavMeshDataInstance m_NavMeshInstance;
-
+    
     public void SetLevel()
     {
         _parent = new GameObject("PlayGround");
@@ -26,22 +28,21 @@ public class GameManager : Instancable<GameManager>
         CreateHostage();
         Zoom.Instance.zoomSlider.value = 60;
     }
-
+    
     private void GenerateNavmesh()
     {
         if (m_NavMeshInstance.valid)
         {
             NavMesh.RemoveNavMeshData(m_NavMeshInstance);
         }
-        
         m_NavMeshInstance = NavMesh.AddNavMeshData(m_NavMeshData);
     }
-
-    private void PlayerTransformSet()
+    
+    public void PlayerTransformSet()
     {
         _playerTransform.position = LevelManager.Instance.LevelDatas[LevelManager.Instance.CurrentLevel].playerPosition;
         _playerTransform.rotation = LevelManager.Instance.LevelDatas[LevelManager.Instance.CurrentLevel].playerRotation;
-        _playerTransform.localScale=  LevelManager.Instance.LevelDatas[LevelManager.Instance.CurrentLevel].playerScale; 
+        _playerTransform.localScale=  LevelManager.Instance.LevelDatas[LevelManager.Instance.CurrentLevel].playerScale;
     }
     public void CreateHostage()
     {
@@ -52,17 +53,15 @@ public class GameManager : Instancable<GameManager>
                 LevelManager.Instance.LevelDatas[LevelManager.Instance.CurrentLevel].hostages[i].prefab.transform.rotation ,_parent.transform);
         }
     }
-
-   public void CreateEnemy()
+    public void CreateEnemy()
     {
         for (int i = 0; i < LevelManager.Instance.LevelDatas[LevelManager.Instance.CurrentLevel].enemies.Count; i++)
         { 
             var createdEnemy = Instantiate(LevelManager.Instance.LevelDatas[LevelManager.Instance.CurrentLevel].enemies[i].prefab,
                 LevelManager.Instance.LevelDatas[LevelManager.Instance.CurrentLevel].enemies[i].spawnPoint,
                 LevelManager.Instance.LevelDatas[LevelManager.Instance.CurrentLevel].enemies[i].prefab.transform.rotation ,_parent.transform);
+            createdEnemy.GetComponent<Enemy>().hipPos =
+                LevelManager.Instance.LevelDatas[LevelManager.Instance.CurrentLevel].enemies[i].hips;
         }
     }
-   
-   
-   
 }

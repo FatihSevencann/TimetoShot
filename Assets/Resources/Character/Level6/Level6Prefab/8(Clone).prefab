@@ -1720,8 +1720,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _EnemyAnimator: {fileID: 2638718911853840967}
+  _hips: {fileID: 6904518111251070577}
   arrowPointer: {fileID: 7834475601834170643}
   agent: {fileID: 8270743963332091948}
+  hipPos: 0
 --- !u!95 &2638718911853840967
 Animator:
   serializedVersion: 5

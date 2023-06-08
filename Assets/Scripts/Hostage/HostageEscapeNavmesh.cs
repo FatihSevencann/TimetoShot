@@ -18,13 +18,11 @@ public class HostageEscapeNavmesh : Instancable<HostageEscapeNavmesh>
             SetTargetPosition();
             StartCoroutine(WalkRandom());
         }
-        
     }
 
     void SetTargetPosition()
     {
-        
-            Vector3 randomDirection = Random.insideUnitSphere * 10;
+        Vector3 randomDirection = Random.insideUnitSphere * 10;
             randomDirection += transform.position;
             NavMeshHit hit;
             if (NavMesh.SamplePosition(randomDirection, out hit, 10, NavMesh.AllAreas))
@@ -34,7 +32,7 @@ public class HostageEscapeNavmesh : Instancable<HostageEscapeNavmesh>
                 print("Set destination: " + finalPosition);
             }
     }
-
+    
     private void Update()
     {
         if (!LevelManager.IsGameRunning)

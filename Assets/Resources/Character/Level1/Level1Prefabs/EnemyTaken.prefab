@@ -1733,7 +1733,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6922992420146114823}
   m_LocalRotation: {x: -0.011570611, y: 0.3464247, z: 0.02286018, w: 0.93772787}
-  m_LocalPosition: {x: -0.032, y: 0.683, z: -0.034}
+  m_LocalPosition: {x: -0.032, y: 0.68, z: -0.034}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1996,8 +1996,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _EnemyAnimator: {fileID: 4731580400258272804}
+  _hips: {fileID: 6922992420146114823}
   arrowPointer: {fileID: 6117355267304030447}
   agent: {fileID: 8317059278653603887}
+  hipPos: 0
 --- !u!95 &4731580400258272804
 Animator:
   serializedVersion: 5

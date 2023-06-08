@@ -10,7 +10,7 @@ public class CameraSwitchAnimator : Instancable<CameraSwitchAnimator>
     public bool IsCameraMoving;
     private void Start()
     {
-        SwitchToThirdPersonPos();
+        SwitchToThirdPersonPos(0);
     }
 
     private void Update()
@@ -19,6 +19,7 @@ public class CameraSwitchAnimator : Instancable<CameraSwitchAnimator>
         {
             Zoom.Instance.isShootin = false;
             SwitchToArrowPos();
+            
         }
         if (Zoom.Instance.zoomSlider.value>=60 && !FindObjectOfType<Bullet>())
         {
@@ -29,6 +30,7 @@ public class CameraSwitchAnimator : Instancable<CameraSwitchAnimator>
     public void SwitchToArrowPos()
     {
         IsCameraMoving = true;
+       
         StaticObjects.MainCamera.transform.DOMove(arrowPosTransform.position, 1).OnComplete((() =>
         {
             IsCameraMoving = false;
@@ -36,12 +38,19 @@ public class CameraSwitchAnimator : Instancable<CameraSwitchAnimator>
         StaticObjects.MainCamera.transform.parent = null;
         AimController.Instance.IsAiming = true;
     }
-    public void SwitchToThirdPersonPos()
+
+    public void Recoil()
+    {
+        StaticObjects.MainCamera.transform.DOShakePosition(0.2f, new Vector3(0.1f, 0.1f, 0f));
+    }
+    public void SwitchToThirdPersonPos(float time = 1)
     {
         IsCameraMoving = true;
         Transform transform1;
+
+        StaticObjects.MainCamera.transform.DOKill();
         
-        (transform1 = StaticObjects.MainCamera.transform).DOMove(thirdPersonPosTransform.position, 1).OnComplete(() =>
+        (transform1 = StaticObjects.MainCamera.transform).DOMove(thirdPersonPosTransform.position, time).OnComplete(() =>
         {
             IsCameraMoving = false;
         });

@@ -1,5 +1,7 @@
 using System;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class Zoom : Instancable<Zoom>
@@ -13,7 +15,8 @@ public class Zoom : Instancable<Zoom>
     public Camera mainCamera;
     public Slider zoomSlider;
     public bool isShootin = false;
-
+    
+    
     private void Awake()
     {
         zoomSlider.minValue = minFOV;
@@ -24,19 +27,19 @@ public class Zoom : Instancable<Zoom>
 
     public void OnZoomSliderValueChanged()
     {
-        if (!isShootin)
+        if (!isShootin )
         {
             float fov = zoomSlider.value;
             mainCamera.fieldOfView = fov;
         }
     }
-
     private void Update()
     {
+
         if (CameraSwitchAnimator.Instance.IsCameraMoving)
         {
             return;
         }
-        _sniperTransfrom.transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0);
     }
+  
 }

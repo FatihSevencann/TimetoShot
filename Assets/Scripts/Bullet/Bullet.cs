@@ -15,6 +15,7 @@ public class Bullet : Instancable<Bullet>
    private Enemy enemyTarget;
 
    private bool _hasHostage;
+
    public void SetHostage(bool hasHostage)
    {
       _hasHostage = hasHostage;
@@ -31,7 +32,6 @@ public class Bullet : Instancable<Bullet>
    {
       if (other.CompareTag("Target"))
       {
-         print("target a carpti");
          gameObject.GetComponent<Rigidbody>().velocity=Vector3.zero;
          gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
          
@@ -54,6 +54,7 @@ public class Bullet : Instancable<Bullet>
       }
       else if (other.CompareTag("Hostage"))
       {
+      
          gameObject.GetComponent<Rigidbody>().velocity=Vector3.zero;
          gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
          BulletFollowController.Instance.follow = false;
@@ -67,7 +68,7 @@ public class Bullet : Instancable<Bullet>
          AimController.Instance.StartCoroutine(AimController.Instance.NextPanel());
          CameraSwitchAnimator.Instance.SwitchToThirdPersonPos();
       }
-      else if (_hasHostage ||  LevelManager.Instance.bulletCount<1)
+      else if (_hasHostage ||  LevelManager.Instance.bulletCount<1 )
       {
          StartCoroutine(AimController.Instance.ReloadPanel());
       }

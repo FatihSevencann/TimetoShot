@@ -2025,8 +2025,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _EnemyAnimator: {fileID: -5247209458014578456}
+  _hips: {fileID: 7444521480762501267}
   arrowPointer: {fileID: 6592629721956985508}
   agent: {fileID: 2255895390816940793}
+  hipPos: 0
 --- !u!95 &-5247209458014578456
 Animator:
   serializedVersion: 5

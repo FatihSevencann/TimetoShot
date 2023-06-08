@@ -16,7 +16,7 @@ MonoBehaviour:
   bulletCount: 6
   enemyCount: 2
   hostageCount: 4
-  playerPosition: {x: -1.9000001, y: 54.67, z: 33.7}
+  playerPosition: {x: -1.9000001, y: 45, z: 12.59}
   playerRotation: {x: 0, y: 0, z: 0, w: 0}
   playerScale: {x: 1, y: 1, z: 1}
   Map: {fileID: 7621426336173981185, guid: 6f3cbd6274f464391aca25ee5f11e10e, type: 3}
@@ -31,15 +31,25 @@ MonoBehaviour:
   enemies:
   - prefab: {fileID: 9172257137801668212, guid: 87c9906244b1c481a8f1230fc87cf226, type: 3}
     spawnPoint: {x: 9.01, y: 2.0833333, z: -90.85}
+    hips: -35.7
   - prefab: {fileID: 5994160343583724952, guid: d6d4d2cd27927490e86c3e4307cac734, type: 3}
     spawnPoint: {x: -14.32, y: 0.111891806, z: -88.3}
+    hips: 0.91
   hostages:
   - prefab: {fileID: 2947580273854168658, guid: 251ded4483e744e5b8731956dc889392, type: 3}
     spawnPoint: {x: 38.002, y: 0.27, z: -96.078}
+    hips: 0
   - prefab: {fileID: 5791351273679599681, guid: 005fbc69f0f32444c9951b19fcf7c84d, type: 3}
     spawnPoint: {x: 34.26, y: 0.38, z: -96.23}
+    hips: 0
   - prefab: {fileID: 5100713742332489597, guid: 83d0f57c2921247b391d0ace592bb7c2, type: 3}
     spawnPoint: {x: 0.099999905, y: 2.0633333, z: -92.4}
+    hips: 0
   - prefab: {fileID: 2976835076788141973, guid: e8ba108c921af4b3d8525aadc6a74d05, type: 3}
     spawnPoint: {x: -3.4, y: 2.0833333, z: -93.3}
+    hips: 0
   distance: 3
+  minRotationAngleY: 158
+  maxRotationAngleY: 205
+  minRotationAngleX: 6
+  maxRotationAngleX: 31

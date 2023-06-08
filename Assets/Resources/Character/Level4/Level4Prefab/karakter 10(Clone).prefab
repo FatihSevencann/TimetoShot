@@ -1436,7 +1436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6909617834661884902}
   m_LocalRotation: {x: -0.0057902043, y: 0.040904883, z: 0.024608498, w: 0.9988432}
-  m_LocalPosition: {x: 1, y: -28.1, z: 2}
+  m_LocalPosition: {x: 1, y: -60.7, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1721,8 +1721,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _EnemyAnimator: {fileID: 3990563888634394250}
+  _hips: {fileID: 6909617834661884902}
   arrowPointer: {fileID: 3516565259251702539}
   agent: {fileID: 3133432992127576126}
+  hipPos: 0
 --- !u!195 &3133432992127576126
 NavMeshAgent:
   m_ObjectHideFlags: 0

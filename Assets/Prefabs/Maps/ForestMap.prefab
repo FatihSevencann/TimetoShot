@@ -1393,7 +1393,6 @@ GameObject:
   - component: {fileID: 7895375503344663888}
   - component: {fileID: 4513577341510327816}
   - component: {fileID: 3887619049049110270}
-  - component: {fileID: 1569145267923004577}
   - component: {fileID: 5340970460830514483}
   m_Layer: 0
   m_Name: Cylinder.004
@@ -1467,20 +1466,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1569145267923004577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2194673131661097713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d476000be8b8434bb71cdf1dd1037d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationPoint: {fileID: 7895375503344663888}
-  rotateSpeed: 30
 --- !u!208 &5340970460830514483
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1508,7 +1493,6 @@ GameObject:
   - component: {fileID: 5235700224812432618}
   - component: {fileID: 5430479903335217259}
   - component: {fileID: 1007651389299536602}
-  - component: {fileID: 1569145267010081141}
   - component: {fileID: 2898971095467637640}
   m_Layer: 0
   m_Name: Cylinder.006
@@ -1582,20 +1566,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1569145267010081141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2354155530640389795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d476000be8b8434bb71cdf1dd1037d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationPoint: {fileID: 5207691941850549338}
-  rotateSpeed: 30
 --- !u!208 &2898971095467637640
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2597,7 +2567,6 @@ GameObject:
   - component: {fileID: 7633129305775015022}
   - component: {fileID: 6251117901135185897}
   - component: {fileID: 8477716924999195811}
-  - component: {fileID: 1569145267462606125}
   - component: {fileID: 8206286112322784315}
   m_Layer: 0
   m_Name: Cylinder.005
@@ -2671,20 +2640,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1569145267462606125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3682471480252945556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d476000be8b8434bb71cdf1dd1037d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationPoint: {fileID: 7633129305775015022}
-  rotateSpeed: 30
 --- !u!208 &8206286112322784315
 NavMeshObstacle:
   m_ObjectHideFlags: 0

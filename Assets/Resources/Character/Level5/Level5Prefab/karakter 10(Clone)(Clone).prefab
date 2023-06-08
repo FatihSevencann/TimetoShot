@@ -1728,8 +1728,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _EnemyAnimator: {fileID: -1153555421313068514}
+  _hips: {fileID: 68914327167747982}
   arrowPointer: {fileID: 5703287741606062740}
   agent: {fileID: 8018929351894101228}
+  hipPos: 0
 --- !u!195 &8018929351894101228
 NavMeshAgent:
   m_ObjectHideFlags: 0

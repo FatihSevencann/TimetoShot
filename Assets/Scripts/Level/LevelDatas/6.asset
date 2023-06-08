@@ -29,11 +29,19 @@ MonoBehaviour:
   enemies:
   - prefab: {fileID: 5562392355083264450, guid: f7783a0c1df2a4e83bf33969d3bc0314, type: 3}
     spawnPoint: {x: 2.5, y: 0, z: -8.3}
+    hips: -127.2
   - prefab: {fileID: 7950158479555375346, guid: 7e481894363424a3685ee524a494480a, type: 3}
     spawnPoint: {x: -1.45, y: 0, z: 9.85}
+    hips: -33.1
   hostages:
   - prefab: {fileID: 7395246847193418564, guid: d54a67cebbeaf420dac72ee66982edef, type: 3}
     spawnPoint: {x: 2.7, y: 0, z: -0.2}
+    hips: 0
   - prefab: {fileID: 160515187331043922, guid: 7a843b7656aab425da0e4fa742f3f014, type: 3}
     spawnPoint: {x: -0.3, y: 0, z: -0.2}
+    hips: 0
   distance: 2
+  minRotationAngleY: 130
+  maxRotationAngleY: 220
+  minRotationAngleX: 2
+  maxRotationAngleX: 25

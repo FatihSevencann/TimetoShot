@@ -1497,8 +1497,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _EnemyAnimator: {fileID: 2247991311921570010}
+  _hips: {fileID: 6766834631340215691}
   arrowPointer: {fileID: 7680000223732489590}
   agent: {fileID: 8311960787671437354}
+  hipPos: 0
 --- !u!195 &8311960787671437354
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1673,7 +1675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6766834631340215691}
   m_LocalRotation: {x: -0.01182208, y: 0.34642288, z: 0.022172486, w: 0.9377419}
-  m_LocalPosition: {x: 0.4, y: -7.4, z: 0.4}
+  m_LocalPosition: {x: 0.4, y: -14.1, z: 0.4}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:

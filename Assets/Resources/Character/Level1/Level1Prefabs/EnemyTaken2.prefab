@@ -833,8 +833,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _EnemyAnimator: {fileID: -4320092139171609558}
+  _hips: {fileID: 2814282408748130245}
   arrowPointer: {fileID: 2360498762286933312}
   agent: {fileID: 3702555630609309962}
+  hipPos: 0
 --- !u!95 &-4320092139171609558
 Animator:
   serializedVersion: 5

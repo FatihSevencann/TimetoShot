@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Helpers;
+
 
 public class UIManager : Instancable<UIManager>
 {
@@ -20,6 +22,7 @@ public class UIManager : Instancable<UIManager>
         Destroy(GameManager.Instance._parent);
         LevelManager.Instance.Reload();
         GameManager.Instance.SetLevel();
+      
         GameManager.Instance.reloadPanel.SetActive(false);
         GameManager.Instance.buttonPanel.SetActive(true);
     }

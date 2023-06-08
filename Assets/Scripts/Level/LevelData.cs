@@ -6,8 +6,8 @@ public class EnemyPrefs
 {
     public GameObject prefab;
     public Vector3 spawnPoint;
+    public float hips;
 }
-
 public class HostagePrefs
 {
     public GameObject prefab;
@@ -37,14 +37,15 @@ public class LevelData : ScriptableObject
 
     public float distance;
     
-
+    public float minRotationAngleY; 
+    public float maxRotationAngleY;
+    
+    public float minRotationAngleX; 
+    public float maxRotationAngleX;
+    
     public int LevelCount
     {
         get => _levelCount;
         set => _levelCount = value;
     }
-    
-    
-    
-
 }

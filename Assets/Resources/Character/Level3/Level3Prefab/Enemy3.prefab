@@ -307,11 +307,11 @@ SkinnedMeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -2948971879453628409, guid: 2cb858e66aec04956bd7a4f5ab232741, type: 3}
-  - {fileID: -2481280552942852289, guid: 2cb858e66aec04956bd7a4f5ab232741, type: 3}
-  - {fileID: -2794873207537911244, guid: 2cb858e66aec04956bd7a4f5ab232741, type: 3}
-  - {fileID: 5518320694637283330, guid: 2cb858e66aec04956bd7a4f5ab232741, type: 3}
+  - {fileID: 2100000, guid: ea6219fefc1cb416d8365132498daf7d, type: 2}
+  - {fileID: 2100000, guid: ea6219fefc1cb416d8365132498daf7d, type: 2}
+  - {fileID: 2100000, guid: 0cd547546053744d5b917dbfa48dd5b7, type: 2}
   - {fileID: -7252593629180819765, guid: 2cb858e66aec04956bd7a4f5ab232741, type: 3}
-  - {fileID: 1711033405027397914, guid: 2cb858e66aec04956bd7a4f5ab232741, type: 3}
+  - {fileID: 2100000, guid: ea6219fefc1cb416d8365132498daf7d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1905,8 +1905,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _EnemyAnimator: {fileID: 896135478927156495}
+  _hips: {fileID: 4049819467442921953}
   arrowPointer: {fileID: 4196125993307766071}
   agent: {fileID: 2222431330204325669}
+  hipPos: 0
 --- !u!95 &896135478927156495
 Animator:
   serializedVersion: 5
